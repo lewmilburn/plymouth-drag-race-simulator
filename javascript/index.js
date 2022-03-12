@@ -2330,13 +2330,13 @@ class Queen {
 }
 //QUEENS:
 //B13NORMAL
-let lewis = new Queen("Lewis", 5, 8, 3, 12, 5, 3, 10, "Lewis");
+let lewis = new Queen("Lewis", 5, 8, 3, 12, 5, 5, 10, "Lewis");
 let ben = new Queen("Ben", 2, 8, 2, 2, 8, 3, 6, "Ben");
-let elliot = new Queen("Elliot", 10, 12, 8, 6, 6, 8, 10, "Elliot");
-let amy = new Queen("Amy", 4, 12, 6, 7, 6, 5, 10, "Amy");
+let elliot = new Queen("Elliot", 10, 12, 8, 6, 6, 10, 10, "Elliot");
+let amy = new Queen("Amy", 4, 12, 6, 7, 6, 10, 10, "Amy");
 let ella = new Queen("Ella", 12, 6, 10, 10, 4, 8, 10, "Ella");
-let emily = new Queen("Emily", 8, 6, 6, 10, 8, 6, 8, "Emily");
-let molly = new Queen("Molly", 12, 6, 6, 12, 2, 4, 6, "Molly");
+let emily = new Queen("Emily", 8, 6, 6, 9, 8, 6, 8, "Emily");
+let molly = new Queen("Molly", 12, 6, 6, 12, 2, 10, 6, "Molly");
 let hamish = new Queen("Hamish", 2, 2, 2, 2, 2, 2, 2, "Hamish");
 let bethany = new Queen("Bethany", 10, 2, 12, 12, 3, 4, 6, "Bethany");
 let mabel = new Queen("Mabel", 12, 8, 10, 6, 4, 5, 8, "Mabel");
@@ -2344,13 +2344,13 @@ let harvey = new Queen("Harvey", 2, 8, 4, 3, 9, 5, 4, "Harvey");
 let ruben = new Queen("Ruben", 8, 10, 2, 2, 6, 3, 6, "Ruben");
 let b13normal = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,mabel,harvey,ruben];
 //B13DRAG:
-let millburner = new Queen("Mill Burner", 5, 8, 3, 12, 5, 3, 10, "Mill Burner");
+let millburner = new Queen("Mill Burner", 5, 8, 3, 12, 5, 5, 10, "Mill Burner");
 let bendover = new Queen("Ben Dover", 2, 8, 2, 2, 8, 3, 6, "Ben Dover");
-let pennyrolls = new Queen("Penny Rolls", 10, 12, 8, 6, 6, 8, 10, "Penny Rolls");
-let pussyclart = new Queen("PussyClart", 4, 12, 6, 7, 6, 5, 10, "PussyClart");
+let pennyrolls = new Queen("Penny Rolls", 10, 12, 8, 6, 6, 10, 10, "Penny Rolls");
+let pussyclart = new Queen("PussyClart", 4, 12, 6, 7, 6, 10, 10, "PussyClart");
 let ellavatit = new Queen("Ella VaTit", 12, 6, 10, 10, 4, 8, 10, "Ella VaTit");
-let cheallywinks = new Queen("Cheally Winks", 8, 6, 6, 10, 8, 6, 8, "Cheally Winks");
-let gingersparks = new Queen("Ginger Sparks", 12, 6, 6, 12, 2, 4, 6, "Ginger Sparks");
+let cheallywinks = new Queen("Cheally Winks", 8, 6, 6, 9, 8, 6, 8, "Cheally Winks");
+let gingersparks = new Queen("Ginger Sparks", 12, 6, 6, 12, 2, 10, 6, "Ginger Sparks");
 let b13drag = [millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks];
 //all possible queens:
 let allCustomQueens = [];
