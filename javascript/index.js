@@ -2329,6 +2329,29 @@ class Queen {
     }
 }
 //QUEENS:
+//B13NORMAL
+let lewis = new Queen("Lewis", 3, 2, 7, 3, 2, 7, 12, "Lewis");
+let ben = new Queen("Ben", 3, 2, 7, 3, 2, 7, 12, "Ben");
+let elliot = new Queen("Elliot", 7, 7, 7, 10, 7, 10, 9, "Elliot");
+let amy = new Queen("Amy", 3, 3, 6, 7, 3, 7, 7, "Amy");
+let ella = new Queen("Ella", 4, 4, 5, 11, 3, 10, 4, "Ella");
+let emily = new Queen("Emily", 10, 7, 7, 9, 10, 8, 8, "Emily");
+let molly = new Queen("Molly", 3, 3, 6, 4, 2, 6, 5, "Molly");
+let hamish = new Queen("Hamish", 5, 5, 5, 9, 4, 9, 7, "Hamish");
+let bethany = new Queen("Bethany", 10, 8, 5, 7, 8, 7, 6, "Bethany");
+let mabel = new Queen("Mabel", 10, 8, 4, 3, 9, 5, 4, "Mabel");
+let harvey = new Queen("Harvey", 10, 8, 4, 3, 9, 5, 4, "Harvey");
+let ruben = new Queen("Ruben", 10, 8, 4, 3, 9, 5, 4, "Ruben");
+let b13normal = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,mabel,harvey,ruben];
+//B13DRAG:
+let millburner = new Queen("Mill Burner", 3, 2, 7, 3, 2, 7, 12, "Mill Burner");
+let bendover = new Queen("Ben Dover", 3, 2, 7, 3, 2, 7, 12, "Ben Dover");
+let pennyrolls = new Queen("Penny Rolls", 7, 7, 7, 10, 7, 10, 9, "Penny Rolls");
+let pussyclart = new Queen("PussyClart", 3, 3, 6, 7, 3, 7, 7, "PussyClart");
+let ellavatit = new Queen("Ella VaTit", 4, 4, 5, 11, 3, 10, 4, "Ella VaTit");
+let cheallywinks = new Queen("Cheally Winks", 10, 7, 7, 9, 10, 8, 8, "Cheally Winks");
+let gingersparks = new Queen("Ginger Sparks", 3, 3, 6, 4, 2, 6, 5, "Ginger Sparks");
+let b13drag = [millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks];
 //SEASON 1:
 let akashia = new Queen("Akashia", 3, 2, 7, 3, 2, 7, 12, "Akashia");
 let bebe = new Queen("BeBe Zahara Benet", 7, 7, 7, 10, 7, 10, 9, "BeBe");
