@@ -2360,7 +2360,7 @@ let elliot = new Queen("Elliot", 10, 12, 8, 6, 6, 10, 10, "Elliot");
 let amy = new Queen("Amy", 4, 12, 6, 7, 6, 10, 10, "Amy");
 let ella = new Queen("Ella", 12, 6, 10, 10, 4, 8, 10, "Ella");
 let emily = new Queen("Emily", 8, 6, 6, 9, 8, 6, 8, "Emily");
-let molly = new Queen("Molly", 12, 6, 6, 12, 2, 10, 6, "Molly");
+let molly = new Queen("Molly", 12, 6, 6, 9, 2, 10, 6, "Molly");
 let hamish = new Queen("Hamish", 2, 2, 2, 2, 2, 2, 2, "Hamish");
 let bethany = new Queen("Bethany", 10, 2, 12, 12, 3, 4, 6, "Bethany");
 let mabel = new Queen("Mabel", 12, 8, 10, 6, 4, 5, 8, "Mabel");
@@ -2374,7 +2374,7 @@ let pennyrolls = new Queen("Penny Rolls", 10, 12, 8, 6, 6, 10, 10, "Penny Rolls"
 let pussyclart = new Queen("PussyClart", 4, 12, 6, 7, 6, 10, 10, "PussyClart");
 let ellavatit = new Queen("Ella VaTit", 12, 6, 10, 10, 4, 8, 10, "Ella VaTit");
 let cheallywinks = new Queen("Cheally Winks", 8, 6, 6, 9, 8, 6, 8, "Cheally Winks");
-let gingersparks = new Queen("Ginger Sparks", 12, 6, 6, 12, 2, 10, 6, "Ginger Sparks");
+let gingersparks = new Queen("Ginger Sparks", 12, 6, 6, 9, 2, 10, 6, "Ginger Sparks");
 let b13drag = [millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks];
 //all possible queens:
 let allCustomQueens = [];
