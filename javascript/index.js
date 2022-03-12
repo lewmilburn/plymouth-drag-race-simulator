@@ -2048,21 +2048,29 @@ function lipSync() {
         eliminatedCast.unshift(bottomQueens[1]);
         currentCast.splice(currentCast.indexOf(bottomQueens[1]), 1);
     }
-    else if (myRandomNumber >= 995) {
+    else if (myRandomNumber >= 900) {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let reason = 'error: reason not defined';
-        if (myRandomNumber === 995) {
+        if (myRandomNumber >= 900) {
             reason = 'clarted another contestant!';
-        } else if (myRandomNumber === 996) {
+        } else if (myRandomNumber >= 910) {
             reason = 'shagged Michelle Visache!';
-        } else if (myRandomNumber === 997) {
+        } else if (myRandomNumber >= 920) {
             reason = 'stabbed Sister Sister!';
-        } else if (myRandomNumber === 998) {
+        } else if (myRandomNumber >= 930) {
             reason = 'let out a big shart during your latest performance and it stank out the whole studio!';
-        } else if (myRandomNumber === 999) {
+        } else if (myRandomNumber >= 940) {
             reason = 'slept with RuPaul, you slag!';
-        } else if (myRandomNumber === 1000) {
+        } else if (myRandomNumber >= 950) {
             reason = 'called Michelle Visache a slag, then pissed in her mouth!';
+        } else if (myRandomNumber >= 960) {
+            reason = 'worshiped Satan.';
+        } else if (myRandomNumber >= 970) {
+            reason = 'shat in Jimbo\'s changing room, you fucking dick.';
+        } else if (myRandomNumber >= 980) {
+            reason = 'killed The Vivienne, you\'re under arrest.';
+        } else if (myRandomNumber >= 990) {
+            reason = 'performed whilst on ten kilograms of industrial grade ketamine, then danced around naked selling cocaine to the judges.';
         }
         screen.createBold(disqualifiedQueen.getName() + ", it has come to my attention that you have broken the rules of this competition. The evidence says that you "+reason+" I must ask you to sashay away.");
         bottomQueens[0].addToTrackRecord("BTM2");
