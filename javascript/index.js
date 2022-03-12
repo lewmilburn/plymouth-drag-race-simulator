@@ -2520,7 +2520,7 @@ function lsSong() {
     let screen = new Scene();
     let song = randomNumber(0, lsSongs.length - 1);
     screen.createBold(`The lip-sync song is... ${lsSongs[song]}!`);
-    var playme = document.getElementById('songPlayer'); playme.src='song/'+song+'.mp3'; playme.load();
+    var playme = document.getElementById('songPlayer'); playme.src='audio/song/'+song+'.mp3'; playme.load();
     lsSongs.splice(song, 1);
 }
 let allLsSongs = [
@@ -2536,7 +2536,7 @@ let allLsSongs = [
     "WAP by Cardi B and Megan Thee Stallion",
     "Squidward Nose by Cupcakke",
     "CPR by Cupcakke",
-    "Stacy's Mom by Fountains of Wayne",
+    "Stacy's Mom by Bowling for Soup",
     "Teenage Dirtbag by Wheetus",
     "Toxic by Britney Spears",
     "Material Girl by Saucy Santana",
