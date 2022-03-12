@@ -114,7 +114,7 @@ let bethany = new Queen("Bethany", 10, 8, 5, 7, 8, 7, 6, "Bethany");
 let mabel = new Queen("Mabel", 10, 8, 4, 3, 9, 5, 4, "Mabel");
 let harvey = new Queen("Harvey", 10, 8, 4, 3, 9, 5, 4, "Harvey");
 let ruben = new Queen("Ruben", 10, 8, 4, 3, 9, 5, 4, "Ruben");
-let us_season1 = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,mabel,harvey,ruben];
+let b13normal = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,mabel,harvey,ruben];
 
 //SEASON 1:
 
