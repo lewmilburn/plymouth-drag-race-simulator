@@ -2523,6 +2523,7 @@ function lsSong() {
     screen.createBold(`The lip-sync song is... ${lsSongs[song]}!`);
     audio.pause();
     audio = new Audio('audio/song/' + song + '.mp3');
+    window.alert('Playing AUDIO/SONG/' + song + '.MP3 (${lsSongs[song]})');
     audio.play();
     lsSongs.splice(song, 1);
 }
