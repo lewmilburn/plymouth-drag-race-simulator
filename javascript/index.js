@@ -2025,6 +2025,7 @@ function lipSync() {
     screen.createBold("I've made my decision.");
     let score1 = bottomQueens[0].lipsyncScore - bottomQueens[0].favoritism + bottomQueens[0].unfavoritism;
     let score2 = bottomQueens[1].lipsyncScore - bottomQueens[0].favoritism + bottomQueens[0].unfavoritism;
+    let myRandomNumber = randomNumber(0, 1000);
     if (score1 > 7 && score2 > 7 && randomNumber(0, 100) <= 50 && !doubleShantay && noDouble == false && currentCast.length > 5) {
         screen.createImage(bottomQueens[0].image, "magenta");
         screen.createImage(bottomQueens[1].image, "magenta");
@@ -2047,9 +2048,23 @@ function lipSync() {
         eliminatedCast.unshift(bottomQueens[1]);
         currentCast.splice(currentCast.indexOf(bottomQueens[1]), 1);
     }
-    else if (randomNumber(0, 1000) >= 995) {
+    else if (myRandomNumber >= 995) {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
-        screen.createBold(disqualifiedQueen.getName() + ", it has come to my attention that you have broken the rules of this competition. I must ask you to sashay away.");
+        let reason = 'error: reason not defined';
+        if (myRandomNumber === 995) {
+            reason = 'clarted another contestant!';
+        } else if (myRandomNumber === 996) {
+            reason = 'shagged Michelle Visache!';
+        } else if (myRandomNumber === 997) {
+            reason = 'stabbed Sister Sister!';
+        } else if (myRandomNumber === 998) {
+            reason = 'let out a big shart during your latest performance and it stank out the whole studio!';
+        } else if (myRandomNumber === 999) {
+            reason = 'slept with RuPaul, you slag!';
+        } else if (myRandomNumber === 1000) {
+            reason = 'called Michelle Visache a slag, then pissed in her mouth!';
+        }
+        screen.createBold(disqualifiedQueen.getName() + ", it has come to my attention that you have broken the rules of this competition. The evidence says that you "+reason+" I must ask you to sashay away.");
         bottomQueens[0].addToTrackRecord("BTM2");
         bottomQueens[0].unfavoritism += 5;
         bottomQueens[1].addToTrackRecord("BTM2");
