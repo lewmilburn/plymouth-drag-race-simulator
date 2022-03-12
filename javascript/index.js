@@ -2520,7 +2520,8 @@ function lsSong() {
     let screen = new Scene();
     let song = randomNumber(0, lsSongs.length - 1);
     screen.createBold(`The lip-sync song is... ${lsSongs[song]}!`);
-    var playme = document.getElementById('songPlayer'); playme.src='audio/song/'+song+'.mp3'; playme.load();
+    let audio = new Audio('audio/song/' + song + '.mp3');
+    audio.play();
     lsSongs.splice(song, 1);
 }
 let allLsSongs = [
