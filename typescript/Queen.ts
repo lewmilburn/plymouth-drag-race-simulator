@@ -100,6 +100,22 @@ class Queen {
 
 //QUEENS:
 
+//B13:
+
+let lewis = new Queen("Lewis", 3, 2, 7, 3, 2, 7, 12, "Lewis");
+let ben = new Queen("Ben", 3, 2, 7, 3, 2, 7, 12, "Ben");
+let elliot = new Queen("Elliot", 7, 7, 7, 10, 7, 10, 9, "Elliot");
+let amy = new Queen("Amy", 3, 3, 6, 7, 3, 7, 7, "Amy");
+let ella = new Queen("Ella", 4, 4, 5, 11, 3, 10, 4, "Ella");
+let emily = new Queen("Emily", 10, 7, 7, 9, 10, 8, 8, "Emily");
+let molly = new Queen("Molly", 3, 3, 6, 4, 2, 6, 5, "Molly");
+let hamish = new Queen("Hamish", 5, 5, 5, 9, 4, 9, 7, "Hamish");
+let bethany = new Queen("Bethany", 10, 8, 5, 7, 8, 7, 6, "Bethany");
+let mabel = new Queen("Mabel", 10, 8, 4, 3, 9, 5, 4, "Mabel");
+let harvey = new Queen("Harvey", 10, 8, 4, 3, 9, 5, 4, "Harvey");
+let ruben = new Queen("Ruben", 10, 8, 4, 3, 9, 5, 4, "Ruben");
+let us_season1 = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,mabel,harvey,ruben];
+
 //SEASON 1:
 
 let akashia = new Queen("Akashia", 3, 2, 7, 3, 2, 7, 12, "Akashia");
