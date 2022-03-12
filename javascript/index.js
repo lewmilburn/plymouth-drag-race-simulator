@@ -53,6 +53,7 @@ let ballCounter = false;
 let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
+let audio = new Audio('audio/song/1.mp3');
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2520,7 +2521,8 @@ function lsSong() {
     let screen = new Scene();
     let song = randomNumber(0, lsSongs.length - 1);
     screen.createBold(`The lip-sync song is... ${lsSongs[song]}!`);
-    let audio = new Audio('audio/song/' + song + '.mp3');
+    audio.pause();
+    audio = new Audio('audio/song/' + song + '.mp3');
     audio.play();
     lsSongs.splice(song, 1);
 }
