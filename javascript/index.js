@@ -2520,10 +2520,9 @@ class Scene {
 function lsSong() {
     let screen = new Scene();
     let song = randomNumber(0, lsSongs.length - 1);
-    screen.createBold(`The lip-sync song is... ${lsSongs[song]}!`);
+    screen.createBold(`The lip-sync song is... ${allLsSongs[song]}!`);
     audio.pause();
     audio = new Audio('audio/song/' + song + '.mp3');
-    window.alert('Playing AUDIO/SONG/' + song + '.MP3 ' + allLsSongs[song]);
     audio.play();
     lsSongs.splice(song, 1);
 }
