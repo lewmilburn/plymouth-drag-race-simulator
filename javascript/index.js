@@ -2531,7 +2531,14 @@ let allLsSongs = [
     "Kiss from a Rose by Seal",
     "Vagina by Cupcakke",
     "Video Games by Lana Del Ray",
-    "DISCO BALL by Karen June Lawrence"
+    "DISCO BALL by Karen June Lawrence",
+    "WAP by Cardi B and Megan Thee Stallion",
+    "Squidward Nose by Cupcakke",
+    "CPR by Cupcakke",
+    "Stacy's Mom by Fountains of Wayne",
+    "Teenage Dirtbag by Wheetus",
+    "Toxic by Britney Spears",
+    "Material Girl by Saucy Santana"
 ];
 let lsSongs = [...allLsSongs];
 class Team extends Queen {
