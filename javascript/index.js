@@ -2538,7 +2538,8 @@ let allLsSongs = [
     "Stacy's Mom by Fountains of Wayne",
     "Teenage Dirtbag by Wheetus",
     "Toxic by Britney Spears",
-    "Material Girl by Saucy Santana"
+    "Material Girl by Saucy Santana",
+    "iCarly Theme Tune by iCarly"
 ];
 let lsSongs = [...allLsSongs];
 class Team extends Queen {
