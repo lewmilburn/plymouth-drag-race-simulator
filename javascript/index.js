@@ -2892,7 +2892,7 @@ class Scene {
     createImage(source, color = "black") {
         let image = document.createElement("img");
         image.src = source;
-        image.setAttribute("style", `border-color: ${color}`);
+        image.setAttribute("style", `width: 50px; border-color: ${color}`);
         this._MainBlock.appendChild(image);
     }
 }
