@@ -2519,13 +2519,13 @@ class Scene {
 }
 function lsSong() {
     let screen = new Scene();
-    let song = randomNumber(0, allLsSongs.length - 1);
-    screen.createBold(`The lip-sync song is... ${allLsSongs[song]}!`);
+    let song = randomNumber(0, lsSongs.length - 1);
+    screen.createBold(`The lip-sync song is... ${lsSongs[song]}!`);
     audio.pause();
     audio = new Audio('audio/song/' + song + '.mp3');
     window.alert('Playing AUDIO/SONG/' + song + '.MP3 ' + allLsSongs[song]);
     audio.play();
-    allLsSongs.splice(song, 1);
+    lsSongs.splice(song, 1);
 }
 let allLsSongs = [
     "The Chain by Fleetwood Mack",
