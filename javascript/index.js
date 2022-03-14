@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("rev").innerHTML = "Rev. 99";
+document.getElementById("rev").innerHTML = "Rev. 100";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2060,7 +2060,7 @@ function lipSync() {
         } else if (myRandomNumber >= 920) {
             reason = 'let out a big shart during your latest performance and it stank out the whole studio!';
         } else if (myRandomNumber >= 900) {
-            reason = 'slept with RuPaul, you slag!';
+            reason = 'slept with RuPaul, you slag.';
         } else if (myRandomNumber >= 880) {
             reason = 'called '+clartedQueen['_name']+' a slag, then pissed in their mouth!';
         } else if (myRandomNumber >= 860) {
