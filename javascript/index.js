@@ -55,7 +55,7 @@ let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-115.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-116.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2396,13 +2396,15 @@ let alisonhammond = new Queen("Alison Hammond", 12, 12, 12, 12, 12, 12, 12, "Ali
 let globglogabgalab = new Queen("Globglogabgalab", 2, 2, 12, 2, 12, 2, 2, "Alison Hammond");
 let abbyleemiller = new Queen("Abby Lee Miller", 8, 3, 2, 5, 10, 10, 4, "Abby Lee Miller");
 let cupcakke = new Queen("CupcakKe", 8, 12, 4, 5, 2, 9, 11, "CupcakKe");
-let isaachp = new Queen("Isaac H.P", 10, 12, 3, 7, 9, 5, 2, "Isaac H.P");
+let isaachp = new Queen("Isaac", 10, 12, 3, 7, 9, 5, 2, "Isaac");
 let tinkywinky = new Queen("Tinky Winky", 6, 12, 12, 9, 6, 10, 4, "Tinky Winky");
 let francisbourgeois = new Queen("Francis Bourgeois", 10, 12, 2, 9, 10, 6, 4, "Francis Bourgeois");
 let ginalintetti = new Queen("Gina Linetti", 10, 12, 12, 8, 10, 10, 10, "Gina Linetti");
 let theresamay = new Queen("Theresa May", 10, 2, 12, 8, 8, 12, 10, "Theresa May");
 let borisjohnson = new Queen("Boris Johnson", 6, 12, 2, 8, 2, 4, 6, "Boris Johnson");
-let celebLoveShrine = [monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaachp,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson];
+let daddypig = new Queen("Daddy Pig", 6, 6, 2, 6, 6, 6, 6, "Daddy Pig");
+let lolaskumpy = new Queen("Lola Skumpy", 12, 12, 2, 8, 10, 8, 8, "Lola Skumpy");
+let celebLoveShrine = [monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaachp,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lolaskumpy];
 //all possible queens:
 let allCustomQueens = [];
 if (localStorage.getItem("customQueens") != null)
@@ -2417,7 +2419,7 @@ allCustomQueens.splice(0, customLength);
 let allQueens = [
     lewis,ben,ella,elliot,amy,molly,emily,mabel,harvey,ruben,hamish,bethany,
     millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks,
-    monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaachp,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson
+    monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaachp,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lola
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
 let randomReturn = false;
