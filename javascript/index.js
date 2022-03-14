@@ -1366,8 +1366,6 @@ function contestantProgress() {
     }
     main.appendChild(trackRecords);
     if (onFinale) {
-        screen.createButton("Simulate again!", "reSimulate()");
-        screen.createHorizontalLine();
         screen.createButton("Back to main page", "location.reload()");
     }
 }
