@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-104.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-105.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2051,7 +2051,7 @@ function lipSync() {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let clartedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let reason = 'ERROR: REASON NOT DEFINED';
-        let disqualificationReason = randomNumber(0, 13);
+        let disqualificationReason = randomNumber(0, 12);
         if (disqualificationReason === 0) {
             reason = 'clarted '+clartedQueen['_name']+'!';
         } else if (disqualificationReason === 1) {
@@ -2078,8 +2078,6 @@ function lipSync() {
             reason = 'prolapsed on stage.';
         } else if (disqualificationReason === 12) {
             reason = 'got discharge all over the stage which cost £10,000 in clean up costs.';
-        } else if (disqualificationReason === 13) {
-            reason = 'showed '+clartedQueen['_name']+' an xray of your large intestine, which they got heavily offended by as they\'re vegetarian.';
         }
         screen.createBold(disqualifiedQueen.getName() + ", it has come to my attention that you have broken the rules of this competition. The evidence says that you "+reason+" I must ask you to sashay away.");
         bottomQueens[0].addToTrackRecord("BTM2");
