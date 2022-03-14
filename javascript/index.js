@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("rev").innerHTML = "Rev. 96";
+document.getElementById("rev").innerHTML = "Rev. 97";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2047,11 +2047,10 @@ function lipSync() {
         eliminatedCast.unshift(bottomQueens[1]);
         currentCast.splice(currentCast.indexOf(bottomQueens[1]), 1);
     }
-    else if (myRandomNumber >= 0) {
+    else if (myRandomNumber >= 800) {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let clartedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
-        let reason = 'error: reason not defined';
-        if (myRandomNumber >= 800) {
+        if (myRandomNumber >= 980) {
             reason = 'clarted '+clartedQueen['_name']+'!';
         } else if (myRandomNumber >= 960) {
             reason = 'shagged Michelle Visache!';
