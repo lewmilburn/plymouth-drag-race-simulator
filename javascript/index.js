@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-106.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-107.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2576,7 +2576,8 @@ let allLsSongs = [
     "iCarly Theme Tune by iCarly",
     "Soph Aspin Send by Millie B",
     "Heaven by DJ Sammy (ft. Do)",
-    "Hallucinate by Dua Lipa"
+    "Hallucinate by Dua Lipa",
+    "Applause by Lady Gaga"
 ];
 let lsSongs = [...allLsSongs];
 class Team extends Queen {
