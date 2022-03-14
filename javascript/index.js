@@ -54,7 +54,8 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-110.";
+audio.play();
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-111.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -1465,6 +1466,7 @@ function predefCast(cast, format, premiere = '', returning = '') {
 }
 function startSimulation(challenge = "") {
     //get selected names and compare them to the all queens list:
+    audio.pause();
     for (let i = 0; i < document.getElementsByClassName("queenList").length; i++) {
         let select = document.getElementById(i.toString());
         let value = select.options[select.selectedIndex].text;
