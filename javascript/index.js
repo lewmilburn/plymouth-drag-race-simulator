@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("rev").innerHTML = "Rev. 98";
+document.getElementById("rev").innerHTML = "Rev. 99";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2066,7 +2066,7 @@ function lipSync() {
         } else if (myRandomNumber >= 860) {
             reason = 'worshiped Satan.';
         } else if (myRandomNumber >= 840) {
-            reason = 'shat in '+clartedQueen['_name']+'\'s changing room, you fucking dick.';
+            reason = 'shit in '+clartedQueen['_name']+'\'s changing room, you fucking dick.';
         } else if (myRandomNumber >= 820) {
             reason = 'killed The Vivienne, you\'re under arrest.';
         } else if (myRandomNumber >= 800) {
