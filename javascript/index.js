@@ -53,8 +53,9 @@ let ballCounter = false;
 let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
-let audio = new Audio('audio/song/1.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-113.";
+let audio = new Audio('audio/song/4.mp3');
+audio.play();
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-114.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -1465,6 +1466,7 @@ function predefCast(cast, format, premiere = '', returning = '') {
 }
 function startSimulation(challenge = "") {
     //get selected names and compare them to the all queens list:
+    audio.pause();
     for (let i = 0; i < document.getElementsByClassName("queenList").length; i++) {
         let select = document.getElementById(i.toString());
         let value = select.options[select.selectedIndex].text;
@@ -2388,10 +2390,10 @@ let monsieurthomas = new Queen("Monsieur Thomas", 12, 10, 2, 10, 2, 12, 2, "Mons
 let shrek = new Queen("Shrek", 2, 12, 4, 4, 8, 4, 4, "Shrek");
 let trinavega = new Queen("Trina Vega", 10, 4, 8, 6, 6, 10, 10, "Trina Vega");
 let berniesanders = new Queen("Bernie Sanders", 2, 2, 2, 6, 2, 2, 2, "Bernie Sanders");
-let maccapacca = new Queen("Macca Pacca", 12, 6, 10, 10, 4, 8, 10, "Ella VaTit");
-let cheallywinks = new Queen("Cheally Winks", 8, 6, 6, 9, 8, 6, 8, "Cheally Winks");
-let gingersparks = new Queen("Ginger Sparks", 12, 6, 6, 9, 2, 10, 6, "Ginger Sparks");
-let celebLoveShrine = [monsieurthomas,shrek,trinavega,pussyclart,ellavatit,cheallywinks,gingersparks];
+let maccapacca = new Queen("Macca Pacca", 12, 6, 10, 10, 4, 8, 10, "Macca Pacca");
+let carolebaskin = new Queen("Carole Baskin", 8, 6, 6, 9, 8, 6, 8, "Carole Baskin");
+let trishapaytas = new Queen("Trisha Paytas", 12, 6, 6, 9, 2, 10, 6, "Trisha Paytas");
+let celebLoveShrine = [monsieurthomas,shrek,trinavega,pussyclart,ellavatit,berniesanders,maccapacca,carolebaskin,trishapaytas];
 //all possible queens:
 let allCustomQueens = [];
 if (localStorage.getItem("customQueens") != null)
