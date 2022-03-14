@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-108.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-109.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -1717,7 +1717,7 @@ function judgingScreen() {
         judgingScreen.createImage(bottomQueens[0].image, "cyan");
         judgingScreen.createImage(bottomQueens[1].image, "cyan");
         judgingScreen.createImage(bottomQueens[2].image, "cyan");
-        judgingScreen.createBold(`${topQueens[0].getName()}, ${topQueens[1].getName()}, ${bottomQueens[0].getName()}, ${bottomQueens[1].getName()}, ${bottomQueens[2].getName()}, you represent the tops and bottoms of the week.`);
+        judgingScreen.createBold(`${topQueens[0].getName()}, ${topQueens[1].getName()}, ${bottomQueens[0].getName()}, ${bottomQueens[1].getName()}, ${bottomQueens[2].getName()}, you represent the tops and bottoms of the week ;)`);
     }
     else {
         for (let i = 0; i < topQueens.length; i++) {
@@ -1730,7 +1730,7 @@ function judgingScreen() {
             judged.innerHTML += `${topQueens[i].getName()}, `;
             judged.innerHTML += `${bottomQueens[i].getName()}, `;
         }
-        judged.innerHTML += "you represent the tops and bottoms of the week.";
+        judged.innerHTML += "you represent the tops and bottoms of the week ;)";
     }
     judgingScreen.createHorizontalLine();
     judgingScreen.createParagraph("", "safeQueens");
@@ -2580,7 +2580,11 @@ let allLsSongs = [
     "Applause by Lady Gaga",
     "Boris Bop by JOE (Vossi Bop Parody)",
     "We like to Party! by Vegaboys",
-    "Bubblegum Bitch by MARINA"
+    "Bubblegum Bitch by MARINA",
+    "Take a Hint by Victorious Cast",
+    "Broken Heels by Alexandra Burke",
+    "Crazy in Love by Beyoncé",
+    "Shut Up and Drive by Rihanna"
 ];
 let lsSongs = [...allLsSongs];
 class Team extends Queen {
