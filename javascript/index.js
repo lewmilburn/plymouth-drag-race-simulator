@@ -2048,7 +2048,7 @@ function lipSync() {
         eliminatedCast.unshift(bottomQueens[1]);
         currentCast.splice(currentCast.indexOf(bottomQueens[1]), 1);
     }
-    else if (myRandomNumber >= 900) {
+    else if (myRandomNumber >= 800) {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let reason = 'error: reason not defined';
         if (myRandomNumber >= 980) {
