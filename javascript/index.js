@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("rev").innerHTML = "Rev. 95";
+document.getElementById("rev").innerHTML = "Rev. 96";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2062,11 +2062,11 @@ function lipSync() {
         } else if (myRandomNumber >= 900) {
             reason = 'slept with RuPaul, you slag!';
         } else if (myRandomNumber >= 880) {
-            reason = 'called Michelle Visache a slag, then pissed in her mouth!';
+            reason = 'called '+clartedQueen['_name']+' a slag, then pissed in their mouth!';
         } else if (myRandomNumber >= 860) {
             reason = 'worshiped Satan.';
         } else if (myRandomNumber >= 840) {
-            reason = 'shat in Jimbo\'s changing room, you fucking dick.';
+            reason = 'shat in '+clartedQueen['_name']+'\'s changing room, you fucking dick.';
         } else if (myRandomNumber >= 820) {
             reason = 'killed The Vivienne, you\'re under arrest.';
         } else if (myRandomNumber >= 800) {
