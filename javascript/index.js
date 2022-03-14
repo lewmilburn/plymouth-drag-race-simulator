@@ -2046,11 +2046,12 @@ function lipSync() {
         eliminatedCast.unshift(bottomQueens[1]);
         currentCast.splice(currentCast.indexOf(bottomQueens[1]), 1);
     }
-    else if (myRandomNumber >= 800) {
+    else if (myRandomNumber >= 0) {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
+        let clartedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let reason = 'error: reason not defined';
-        if (myRandomNumber >= 980) {
-            reason = 'clarted another contestant!';
+        if (myRandomNumber >= 0) {
+            reason = 'clarted '+clartedQueen+'!';
         } else if (myRandomNumber >= 960) {
             reason = 'shagged Michelle Visache!';
         } else if (myRandomNumber >= 940) {
