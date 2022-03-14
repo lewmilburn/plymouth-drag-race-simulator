@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-103.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-104.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2051,26 +2051,35 @@ function lipSync() {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let clartedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let reason = 'ERROR: REASON NOT DEFINED';
-        if (myRandomNumber >= 980) {
+        let disqualificationReason = randomNumber(0, 13);
+        if (disqualificationReason === 0) {
             reason = 'clarted '+clartedQueen['_name']+'!';
-        } else if (myRandomNumber >= 960) {
+        } else if (disqualificationReason === 1) {
             reason = 'shagged Michelle Visache!';
-        } else if (myRandomNumber >= 940) {
+        } else if (disqualificationReason === 2) {
             reason = 'stabbed Sister Sister!';
-        } else if (myRandomNumber >= 920) {
+        } else if (disqualificationReason === 3) {
             reason = 'let out a big shart during your latest performance and it stank out the whole studio!';
-        } else if (myRandomNumber >= 900) {
+        } else if (disqualificationReason === 4) {
             reason = 'slept with RuPaul, you slag.';
-        } else if (myRandomNumber >= 880) {
+        } else if (disqualificationReason === 5) {
             reason = 'called '+clartedQueen['_name']+' a slag, then pissed in their mouth!';
-        } else if (myRandomNumber >= 860) {
+        } else if (disqualificationReason === 6) {
             reason = 'worshiped Satan.';
-        } else if (myRandomNumber >= 840) {
+        } else if (disqualificationReason === 7) {
             reason = 'shit in '+clartedQueen['_name']+'\'s changing room, you fucking dick.';
-        } else if (myRandomNumber >= 820) {
+        } else if (disqualificationReason === 8) {
             reason = 'killed The Vivienne, you\'re under arrest.';
-        } else if (myRandomNumber >= 800) {
+        } else if (disqualificationReason === 9) {
             reason = 'performed whilst on ten kilograms of industrial grade ketamine, then danced around naked selling cocaine to the judges.';
+        } else if (disqualificationReason === 10) {
+            reason = 'flashed your stinky hole to '+clartedQueen['_name']+'.';
+        } else if (disqualificationReason === 11) {
+            reason = 'prolapsed on stage.';
+        } else if (disqualificationReason === 12) {
+            reason = 'got discharge all over the stage which cost £10,000 in clean up costs.';
+        } else if (disqualificationReason === 13) {
+            reason = 'showed '+clartedQueen['_name']+' an xray of your large intestine, which they got heavily offended by as they\'re vegetarian.';
         }
         screen.createBold(disqualifiedQueen.getName() + ", it has come to my attention that you have broken the rules of this competition. The evidence says that you "+reason+" I must ask you to sashay away.");
         bottomQueens[0].addToTrackRecord("BTM2");
