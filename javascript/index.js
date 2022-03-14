@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
-audio.play();
+//audio.play();
 document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-114.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
@@ -1466,7 +1466,6 @@ function predefCast(cast, format, premiere = '', returning = '') {
 }
 function startSimulation(challenge = "") {
     //get selected names and compare them to the all queens list:
-    audio.pause();
     for (let i = 0; i < document.getElementsByClassName("queenList").length; i++) {
         let select = document.getElementById(i.toString());
         let value = select.options[select.selectedIndex].text;
@@ -2390,10 +2389,20 @@ let monsieurthomas = new Queen("Monsieur Thomas", 12, 10, 2, 10, 2, 12, 2, "Mons
 let shrek = new Queen("Shrek", 2, 12, 4, 4, 8, 4, 4, "Shrek");
 let trinavega = new Queen("Trina Vega", 10, 4, 8, 6, 6, 10, 10, "Trina Vega");
 let berniesanders = new Queen("Bernie Sanders", 2, 2, 2, 6, 2, 2, 2, "Bernie Sanders");
-let maccapacca = new Queen("Macca Pacca", 12, 6, 10, 10, 4, 8, 10, "Macca Pacca");
-let carolebaskin = new Queen("Carole Baskin", 8, 6, 6, 9, 8, 6, 8, "Carole Baskin");
-let trishapaytas = new Queen("Trisha Paytas", 12, 6, 6, 9, 2, 10, 6, "Trisha Paytas");
-let celebLoveShrine = [monsieurthomas,shrek,trinavega,pussyclart,ellavatit,berniesanders,maccapacca,carolebaskin,trishapaytas];
+let maccapacca = new Queen("Macca Pacca", 12, 6, 11, 10, 4, 8, 10, "Macca Pacca");
+let carolebaskin = new Queen("Carole Baskin", 12, 8, 2, 4, 4, 8, 8, "Carole Baskin");
+let trishapaytas = new Queen("Trisha Paytas", 12, 12, 12, 12, 12, 12, 12, "Trisha Paytas");
+let alisonhammond = new Queen("Alison Hammond", 12, 12, 12, 12, 12, 12, 12, "Alison Hammond");
+let globglogabgalab = new Queen("Globglogabgalab", 2, 2, 12, 2, 12, 2, 2, "Alison Hammond");
+let abbyleemiller = new Queen("Abby Lee Miller", 8, 3, 2, 5, 10, 10, 4, "Abby Lee Miller");
+let cupcakke = new Queen("CupcakKe", 8, 12, 4, 5, 2, 9, 11, "CupcakKe");
+let isaachp = new Queen("Isaac H.P", 10, 12, 3, 7, 9, 5, 2, "Isaac H.P");
+let tinkywinky = new Queen("Tinky Winky", 6, 12, 12, 9, 6, 10, 4, "Tinky Winky");
+let francisbourgeois = new Queen("Francis Bourgeois", 10, 12, 2, 9, 10, 6, 4, "Francis Bourgeois");
+let ginalintetti = new Queen("Gina Linetti", 10, 12, 12, 8, 10, 10, 10, "Gina Linetti");
+let theresamay = new Queen("Theresa May", 10, 2, 12, 8, 8, 12, 10, "Theresa May");
+let borisjohnson = new Queen("Boris Johnson", 6, 12, 2, 8, 2, 4, 6, "Boris Johnson");
+let celebLoveShrine = [monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaachp,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson];
 //all possible queens:
 let allCustomQueens = [];
 if (localStorage.getItem("customQueens") != null)
@@ -2407,7 +2416,8 @@ for (let i = 0; i < customLength; i++) {
 allCustomQueens.splice(0, customLength);
 let allQueens = [
     lewis,ben,ella,elliot,amy,molly,emily,mabel,harvey,ruben,hamish,bethany,
-    millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks
+    millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks,
+    monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaachp,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
 let randomReturn = false;
