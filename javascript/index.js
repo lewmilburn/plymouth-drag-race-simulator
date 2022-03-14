@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-105.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-106.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2573,7 +2573,10 @@ let allLsSongs = [
     "Teenage Dirtbag by Wheetus",
     "Toxic by Britney Spears",
     "Material Girl by Saucy Santana",
-    "iCarly Theme Tune by iCarly"
+    "iCarly Theme Tune by iCarly",
+    "Soph Aspin Send by Millie B",
+    "Heaven by DJ Sammy (ft. Do)",
+    "Hallucinate by Dua Lipa"
 ];
 let lsSongs = [...allLsSongs];
 class Team extends Queen {
