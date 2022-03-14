@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-107.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-108.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -1964,7 +1964,7 @@ function topAndBtm() {
         for (let i = 0; i < bottomQueens.length; i++) {
             bottoms.innerHTML += bottomQueens[i].getName() + ", ";
         }
-        bottoms.innerHTML += "I'm sorry my dears but you're the bottoms of the week.";
+        bottoms.innerHTML += "I'm sorry my dears but you're the bottoms of the week ;)";
         for (let i = 0; i < bottomQueens.length; i++)
             bottomQueens[i].performanceScore -= (bottomQueens[i].runwayScore - bottomQueens[i].favoritism);
         bottomQueens.sort((a, b) => (a.performanceScore - b.performanceScore));
@@ -2577,7 +2577,10 @@ let allLsSongs = [
     "Soph Aspin Send by Millie B",
     "Heaven by DJ Sammy (ft. Do)",
     "Hallucinate by Dua Lipa",
-    "Applause by Lady Gaga"
+    "Applause by Lady Gaga",
+    "Boris Bop by JOE (Vossi Bop Parody)",
+    "We like to Party! by Vegaboys",
+    "Bubblegum Bitch by MARINA"
 ];
 let lsSongs = [...allLsSongs];
 class Team extends Queen {
