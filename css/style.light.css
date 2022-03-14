@@ -7,9 +7,9 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #4D759E;
-    background-image: url(../image/Plymouth.jpg);
+    background-image: url(../image/Background.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     text-align: center;
 }
