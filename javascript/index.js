@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("rev").innerHTML = "Rev. 97";
+document.getElementById("rev").innerHTML = "Rev. 98";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2050,6 +2050,7 @@ function lipSync() {
     else if (myRandomNumber >= 800) {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let clartedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
+        let reason = 'ERROR: REASON NOT DEFINED';
         if (myRandomNumber >= 980) {
             reason = 'clarted '+clartedQueen['_name']+'!';
         } else if (myRandomNumber >= 960) {
