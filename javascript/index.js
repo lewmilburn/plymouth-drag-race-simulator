@@ -54,7 +54,7 @@ let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/1.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Created by edssb, modified by lewmilburn.<br>&nbsp;&nbsp;Version: build-102.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-103.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
