@@ -53,8 +53,8 @@ let ballCounter = false;
 let makeoverCounter = false;
 let snatchCounter = false;
 let lastChallenge = '';
-let audio = new Audio('audio/song/1.mp3');
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-109.";
+let audio = new Audio('audio/song/4.mp3');
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-110.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2383,6 +2383,15 @@ let ellavatit = new Queen("Ella VaTit", 12, 6, 10, 10, 4, 8, 10, "Ella VaTit");
 let cheallywinks = new Queen("Cheally Winks", 8, 6, 6, 9, 8, 6, 8, "Cheally Winks");
 let gingersparks = new Queen("Ginger Sparks", 12, 6, 6, 9, 2, 10, 6, "Ginger Sparks");
 let b13drag = [millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks];
+//CELEB LOVE SHRINE:
+let monsieurthomas = new Queen("Monsieur Thomas", 12, 10, 2, 10, 2, 12, 2, "Monsieur Thomas");
+let shrek = new Queen("Shrek", 2, 12, 4, 4, 8, 4, 4, "Shrek");
+let trinavega = new Queen("Trina Vega", 10, 4, 8, 6, 6, 10, 10, "Trina Vega");
+let berniesanders = new Queen("Bernie Sanders", 2, 2, 2, 6, 2, 2, 2, "Bernie Sanders");
+let maccapacca = new Queen("Macca Pacca", 12, 6, 10, 10, 4, 8, 10, "Ella VaTit");
+let cheallywinks = new Queen("Cheally Winks", 8, 6, 6, 9, 8, 6, 8, "Cheally Winks");
+let gingersparks = new Queen("Ginger Sparks", 12, 6, 6, 9, 2, 10, 6, "Ginger Sparks");
+let celebLoveShrine = [monsieurthomas,shrek,trinavega,pussyclart,ellavatit,cheallywinks,gingersparks];
 //all possible queens:
 let allCustomQueens = [];
 if (localStorage.getItem("customQueens") != null)
