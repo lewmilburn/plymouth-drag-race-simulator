@@ -2049,6 +2049,7 @@ function lipSync() {
     else if (myRandomNumber >= 0) {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let clartedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
+        console.log(clartedQueen);
         let reason = 'error: reason not defined';
         if (myRandomNumber >= 0) {
             reason = 'clarted '+clartedQueen+'!';
