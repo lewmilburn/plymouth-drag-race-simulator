@@ -55,7 +55,7 @@ let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-132.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-133.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2054,7 +2054,11 @@ function lipSync() {
         let reason = 'ERROR: REASON NOT DEFINED';
         let disqualificationReason = randomNumber(0, 12);
         if (disqualificationReason === 0) {
-            reason = 'clarted '+clartedQueen['_name']+'!';
+            if (disqualifiedQueen['_name'] === clartedQueen['_name']) {
+                reason = 'clarted RuPaul.';
+            } else {
+                reason = 'clarted '+clartedQueen['_name']+'!';
+            }
         } else if (disqualificationReason === 1) {
             reason = 'shagged Michelle Visache!';
         } else if (disqualificationReason === 2) {
@@ -2068,17 +2072,31 @@ function lipSync() {
         } else if (disqualificationReason === 6) {
             reason = 'worshiped Satan.';
         } else if (disqualificationReason === 7) {
-            reason = 'shit in '+clartedQueen['_name']+'\'s changing room, you fucking dick.';
+            if (disqualifiedQueen['_name'] === clartedQueen['_name']) {
+                reason = 'shit in RuPaul\'s changing room, you fucking dick.';
+            } else {
+                reason = 'shit in '+clartedQueen['_name']+'\'s changing room, you fucking dick.';
+            }
         } else if (disqualificationReason === 8) {
             reason = 'killed The Vivienne, you\'re under arrest.';
         } else if (disqualificationReason === 9) {
             reason = 'performed whilst on ten kilograms of industrial grade ketamine, then danced around naked selling cocaine to the judges.';
         } else if (disqualificationReason === 10) {
-            reason = 'flashed your stinky hole to '+clartedQueen['_name']+'.';
+            if (disqualifiedQueen['_name'] === clartedQueen['_name']) {
+                reason = 'flashed your stinky hole to RuPaul.';
+            } else {
+                reason = 'flashed your stinky hole to '+clartedQueen['_name']+'.';
+            }
         } else if (disqualificationReason === 11) {
             reason = 'prolapsed on stage.';
         } else if (disqualificationReason === 12) {
             reason = 'got discharge all over the stage which cost £10,000 in clean up costs.';
+        } else if (disqualificationReason === 13) {
+            if (disqualifiedQueen['_name'] === clartedQueen['_name']) {
+                reason = 'called RuPaul a great supine protoplasmic invertebrate jelly!';
+            } else {
+                reason = 'called '+clartedQueen['_name']+' a great supine protoplasmic invertebrate jelly!';
+            }
         }
         screen.createBold(disqualifiedQueen.getName() + ", it has come to my attention that you have broken the rules of this competition. The evidence says that you "+reason+" I must ask you to sashay away.");
         bottomQueens[0].addToTrackRecord("BTM2");
