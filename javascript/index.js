@@ -55,7 +55,7 @@ let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-131.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-132.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2104,12 +2104,10 @@ function lipSync() {
     if (myRandomNumber >= 900) {
         returningQueenScreen();
     }
-    if ((s6Premiere || s12Premiere || porkchopPremiere) == true && premiereCounter < 3)
+    if ((s6Premiere || s12Premiere || porkchopPremiere) == true && premiereCounter < 3) {
         screen.createButton("Proceed", "doublePremiere()");
-    else if (CheckForReturning() == true)
-        screen.createButton("Proceed", "returningQueenScreen()");
-    else
-        screen.createButton("Proceed", "newEpisode()");
+    }
+    screen.createButton("Proceed", "newEpisode()");
 }
 function teamLipSync() {
     let screen = new Scene();
