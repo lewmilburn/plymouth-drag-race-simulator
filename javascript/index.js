@@ -55,7 +55,7 @@ let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-130.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-131.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2447,13 +2447,13 @@ function returningQueenScreen() {
     let screen = new Scene();
     screen.clean();
     screen.createHeader("A lovely surprise...");
-    if (randomReturn)
+    let myRandomNumber = randomNumber(0, 2);
+    if (myRandomNumber === 0)
         queenReturns();
-    if (voteReturn)
+    if (myRandomNumber === 1)
         queenReturnsVote();
-    if (smackdown)
+    if (myRandomNumber === 2)
         lipsyncSmackdown();
-    screen.createButton("Proceed", "newEpisode()");
 }
 function queenReturns() {
     let screen = new Scene();
