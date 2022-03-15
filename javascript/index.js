@@ -55,7 +55,7 @@ let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-129.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-130.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -1538,8 +1538,8 @@ function startSimulation(challenge = "") {
             window.alert("The team format isn't supported with any special premiere or returning formats, sorry!");
             team = false;
             smackdown = false;
-            voteReturn = false;
-            randomReturn = false;
+            voteReturn = true;
+            randomReturn = true;
             rurupalooza = false;
             s6Premiere = false;
             s12Premiere = false;
@@ -2101,6 +2101,9 @@ function lipSync() {
         eliminatedCast.unshift(bottomQueens[1]);
         currentCast.splice(currentCast.indexOf(bottomQueens[1]), 1);
     }
+    if (myRandomNumber >= 900) {
+        returningQueenScreen();
+    }
     if ((s6Premiere || s12Premiere || porkchopPremiere) == true && premiereCounter < 3)
         screen.createButton("Proceed", "doublePremiere()");
     else if (CheckForReturning() == true)
@@ -2422,8 +2425,8 @@ let allQueens = [
     monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaac,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lolaskumpy
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
-let randomReturn = false;
-let voteReturn = false;
+let randomReturn = true;
+let voteReturn = true;
 let rurupalooza = false;
 let smackdown = false;
 function CheckForReturning() {
