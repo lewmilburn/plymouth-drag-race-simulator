@@ -56,7 +56,7 @@ let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
 document.getElementById("softwareinfo").innerHTML =
-    '&nbsp;&nbsp;Version: build-140.';
+    '&nbsp;&nbsp;Version: build-141.';
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2435,8 +2435,20 @@ let gingerbreadman = new Queen("Gingerbread Man", 10, 12, 8, 8, 8, 6, 4, "Ginger
 let queenlillian = new Queen("Queen Lillian", 12, 2, 12, 12, 4, 12, 10, "Queen Lillian");
 let dragon = new Queen("Dragon", 2, 2, 2, 2, 2, 2, 2, "Dragon");
 let magicmirror = new Queen("Magic Mirror", 12, 12, 2, 10, 8, 2, 8, "Magic Mirror");
-let gameShrek = [shrek2,lordfarquaad,fiona,donkey,kingharold,gingerbreadman,queenlillian,dragon,magicmirror];
+let fairygodmother = new Queen("Fairy Godmother", 12, 12, 12, 12, 12, 12, 12, "Fairy Godmother");
+let gameShrek = [shrek2,lordfarquaad,fiona,donkey,kingharold,gingerbreadman,queenlillian,dragon,magicmirror,fairygodmother];
 //SING
+let bigdaddy = new Queen("Big Daddy", 2, 2, 2, 2, 2, 2, 2, "Big Daddy");
+let bustermoon = new Queen("Buster Moon", 4, 2, 2, 12, 8, 6, 2, "Buster Moon");
+let meena = new Queen("Meena", 2, 10, 2, 6, 2, 10, 4, "Meena");
+let gunter = new Queen("Gunter", 6, 12, 12, 10, 2, 8, 8, "Gunter");
+let rosita = new Queen("Rosita", 8, 6, 12, 6, 2, 10, 4, "Rosita");
+let johnny = new Queen("Johnny", 6, 2, 6, 8, 6, 6, 12, "Johnny");
+let ash = new Queen("Ash", 4, 6, 8, 10, 4, 4, 8, "Ash");
+let mike = new Queen("Mike", 2, 2, 2, 12, 4, 6, 10, "Mike");
+let theqteez = new Queen("The Q-Teez", 4, 2, 12, 12, 8, 8, 12, "The Q-Teez");
+let misscrawley = new Queen("Miss Crawley", 12, 12, 12, 12, 12, 12, 12, "Miss Crawley");
+let gameSing = [bigdaddy,bustermoon,meena,gunter,rosita,johnny,ash,mike,theqteez,misscrawley];
 //PEPPA PIG
 //all possible queens:
 let allCustomQueens = [];
@@ -2453,7 +2465,8 @@ let allQueens = [
     lewis,ben,ella,elliot,amy,molly,emily,mabel,harvey,ruben,hamish,bethany,
     millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks,
     monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaac,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lolaskumpy,
-    shrek2,lordfarquaad,fiona,donkey,kingharold,gingerbreadman,queenlillian,dragon,magicmirror
+    shrek2,lordfarquaad,fiona,donkey,kingharold,gingerbreadman,queenlillian,dragon,magicmirror,fairygodmother,
+    bigdaddy,bustermoon,meena,gunter,rosita,johnny,ash,mike,theqteez,misscrawley
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
 let randomReturn = true;
