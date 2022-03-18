@@ -2393,7 +2393,7 @@ let bethany = new Queen("Bethany", 10, 2, 12, 12, 3, 4, 6, "Bethany");
 let mabel = new Queen("Mabel", 12, 8, 10, 6, 4, 5, 8, "Mabel");
 let harvey = new Queen("Harvey", 2, 8, 4, 3, 9, 5, 4, "Harvey");
 let ruben = new Queen("Ruben", 8, 10, 2, 2, 6, 3, 6, "Ruben");
-let b13normal = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,mabel,harvey,ruben];
+let gameB13normal = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,mabel,harvey,ruben];
 //B13DRAG:
 let millburner = new Queen("Mill Burner", 5, 8, 3, 12, 5, 5, 10, "Mill Burner");
 let bendover = new Queen("Ben Dover", 2, 8, 2, 2, 8, 3, 6, "Ben Dover");
@@ -2402,7 +2402,7 @@ let pussyclart = new Queen("PussyClart", 4, 12, 6, 7, 6, 10, 10, "PussyClart");
 let ellavatit = new Queen("Ella VaTit", 12, 6, 10, 10, 4, 8, 10, "Ella VaTit");
 let cheallywinks = new Queen("Cheally Winks", 8, 6, 6, 9, 8, 6, 8, "Cheally Winks");
 let gingersparks = new Queen("Ginger Sparks", 12, 6, 6, 9, 2, 10, 6, "Ginger Sparks");
-let b13drag = [millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks];
+let gameB13drag = [millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks];
 //CELEB LOVE SHRINE:
 let monsieurthomas = new Queen("Monsieur Thomas", 12, 10, 2, 10, 2, 12, 2, "Monsieur Thomas");
 let shrek = new Queen("Shrek", 2, 12, 4, 4, 8, 4, 4, "Shrek");
@@ -2423,7 +2423,17 @@ let theresamay = new Queen("Theresa May", 10, 2, 12, 8, 8, 12, 10, "Theresa May"
 let borisjohnson = new Queen("Boris Johnson", 6, 12, 2, 8, 2, 4, 6, "Boris Johnson");
 let daddypig = new Queen("Daddy Pig", 6, 6, 2, 6, 6, 6, 6, "Daddy Pig");
 let lolaskumpy = new Queen("Lola Skumpy", 12, 12, 2, 8, 10, 8, 8, "Lola Skumpy");
-let celebLoveShrine = [monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaac,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lolaskumpy];
+let gameCelebrities = [monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaac,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lolaskumpy];
+//SHREK
+let shrek2 = new Queen("Shrek", 2, 12, 4, 4, 8, 4, 4, "Shrek");
+let lordfarquaad = new Queen("Lord Farquaad", 8, 2, 2, 2, 2, 8, 4, "Lord Farquaad");
+let fiona = new Queen("Princess Fiona", 10, 2, 12, 10, 4, 8, 6, "Princess Fiona");
+let donkey = new Queen("Donkey", 4, 12, 8, 2, 6, 6, 2, "Donkey");
+let kingharold = new Queen("King Harold", 4, 4, 4, 12, 6, 6, 2, "King Harold");
+let gingerbreadman = new Queen("Gingerbread Man", 10, 12, 8, 8, 8, 6, 4, "Gingerbread Man");
+let queenlillian = new Queen("Queen Lillian", 12, 2, 12, 12, 4, 12, 10, "Queen Lillian");
+let dragon = new Queen("Dragon", 2, 2, 2, 2, 2, 2, 2, "Dragon");
+let gameShrek = [shrek2,lordfarquaad,fiona,donkey,kingharold,gingerbreadman,queenlillian,dragon];
 //all possible queens:
 let allCustomQueens = [];
 if (localStorage.getItem("customQueens") != null)
@@ -2438,7 +2448,8 @@ allCustomQueens.splice(0, customLength);
 let allQueens = [
     lewis,ben,ella,elliot,amy,molly,emily,mabel,harvey,ruben,hamish,bethany,
     millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks,
-    monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaac,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lolaskumpy
+    monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaac,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lolaskumpy,
+    shrek2,lordfarquaad,fiona,donkey,kingharold,gingerbreadman,queenlillian,dragon
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
 let randomReturn = true;
