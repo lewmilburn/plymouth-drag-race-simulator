@@ -56,7 +56,7 @@ let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
 document.getElementById("softwareinfo").innerHTML =
-    '&nbsp;&nbsp;<a href="https://github.com/lewmilburn/plymouth-drag-race-simulator/commits/main">Version: build-136.</a>';
+    '&nbsp;&nbsp;Version: build-137.';
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
