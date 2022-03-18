@@ -56,7 +56,7 @@ let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
 document.getElementById("softwareinfo").innerHTML =
-    '&nbsp;&nbsp;Version: build-138.';
+    '&nbsp;&nbsp;Version: build-139.';
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2049,7 +2049,7 @@ function lipSync() {
         eliminatedCast.unshift(bottomQueens[1]);
         currentCast.splice(currentCast.indexOf(bottomQueens[1]), 1);
     }
-    else if (myRandomNumber >= 800) {
+    else if (myRandomNumber >= 900) {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let clartedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let reason = 'ERROR: REASON NOT DEFINED';
