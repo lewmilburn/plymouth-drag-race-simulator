@@ -56,7 +56,7 @@ let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
 document.getElementById("softwareinfo").innerHTML =
-    '&nbsp;&nbsp;Version: build-137.';
+    '&nbsp;&nbsp;Version: build-138.';
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2120,7 +2120,7 @@ function lipSync() {
         eliminatedCast.unshift(bottomQueens[1]);
         currentCast.splice(currentCast.indexOf(bottomQueens[1]), 1);
     }
-    if (myRandomNumber >= 900) {
+    if (myRandomNumber <= 100) {
         returningQueenScreen();
     }
     if ((s6Premiere || s12Premiere || porkchopPremiere) == true && premiereCounter < 3) {
@@ -2474,7 +2474,6 @@ function CheckForReturning() {
 }
 function returningQueenScreen() {
     let screen = new Scene();
-    screen.clean();
     screen.createHeader("A lovely surprise...");
     let myRandomNumber = randomNumber(0, 2);
     if (myRandomNumber === 0)
