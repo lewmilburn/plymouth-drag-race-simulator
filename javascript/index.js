@@ -55,7 +55,7 @@ let snatchCounter = false;
 let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
-document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-133.";
+document.getElementById("softwareinfo").innerHTML = "&nbsp;&nbsp;Version: build-135.";
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2433,6 +2433,7 @@ let kingharold = new Queen("King Harold", 4, 4, 4, 12, 6, 6, 2, "King Harold");
 let gingerbreadman = new Queen("Gingerbread Man", 10, 12, 8, 8, 8, 6, 4, "Gingerbread Man");
 let queenlillian = new Queen("Queen Lillian", 12, 2, 12, 12, 4, 12, 10, "Queen Lillian");
 let dragon = new Queen("Dragon", 2, 2, 2, 2, 2, 2, 2, "Dragon");
+let magicmirror = new Queen("Magic Mirror", 12, 12, 2, 10, 8, 2, 8, "Magic Mirror");
 let gameShrek = [shrek2,lordfarquaad,fiona,donkey,kingharold,gingerbreadman,queenlillian,dragon];
 //all possible queens:
 let allCustomQueens = [];
