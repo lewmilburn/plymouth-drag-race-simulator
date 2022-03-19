@@ -56,7 +56,7 @@ let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
 document.getElementById("softwareinfo").innerHTML =
-    '&nbsp;&nbsp;Version: build-141.';
+    '&nbsp;&nbsp;Version: build-143';
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2447,8 +2447,9 @@ let johnny = new Queen("Johnny", 6, 2, 6, 8, 6, 6, 12, "Johnny");
 let ash = new Queen("Ash", 4, 6, 8, 10, 4, 4, 8, "Ash");
 let mike = new Queen("Mike", 2, 2, 2, 12, 4, 6, 10, "Mike");
 let theqteez = new Queen("The Q-Teez", 4, 2, 12, 12, 8, 8, 12, "The Q-Teez");
-let misscrawley = new Queen("Miss Crawley", 12, 12, 12, 12, 12, 12, 12, "Miss Crawley");
-let gameSing = [bigdaddy,bustermoon,meena,gunter,rosita,johnny,ash,mike,theqteez,misscrawley];
+let misscrawley = new Queen("Miss Crawley", 10, 10, 10, 4, 6, 12, 12, "Miss Crawley");
+let nananoodleman = new Queen("Nana Noodleman", 10, 2, 8, 12, 12, 12, 12, "Nana Noodleman");
+let gameSing = [bigdaddy,bustermoon,meena,gunter,rosita,johnny,ash,mike,theqteez,misscrawley,nananoodleman];
 //PEPPA PIG
 //all possible queens:
 let allCustomQueens = [];
@@ -2466,7 +2467,7 @@ let allQueens = [
     millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks,
     monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaac,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lolaskumpy,
     shrek2,lordfarquaad,fiona,donkey,kingharold,gingerbreadman,queenlillian,dragon,magicmirror,fairygodmother,
-    bigdaddy,bustermoon,meena,gunter,rosita,johnny,ash,mike,theqteez,misscrawley
+    bigdaddy,bustermoon,meena,gunter,rosita,johnny,ash,mike,theqteez,misscrawley,nananoodleman
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
 let randomReturn = true;
