@@ -2391,10 +2391,10 @@ let emily = new Queen("Emily", 8, 6, 6, 9, 8, 6, 8, "Emily");
 let molly = new Queen("Molly", 12, 6, 6, 9, 2, 10, 6, "Molly");
 let hamish = new Queen("Hamish", 2, 2, 2, 2, 2, 2, 2, "Hamish");
 let bethany = new Queen("Bethany", 10, 2, 12, 12, 3, 4, 6, "Bethany");
-let mabel = new Queen("Mabel", 12, 8, 10, 6, 4, 5, 8, "Mabel");
+let alex = new Queen("Alex", 12, 8, 10, 6, 4, 5, 8, "Alex");
 let harvey = new Queen("Harvey", 2, 8, 4, 3, 9, 5, 4, "Harvey");
 let ruben = new Queen("Ruben", 8, 10, 2, 2, 6, 3, 6, "Ruben");
-let gameB13normal = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,mabel,harvey,ruben];
+let gameB13normal = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,alex,harvey,ruben];
 //B13DRAG:
 let millburner = new Queen("Mill Burner", 5, 8, 3, 12, 5, 5, 10, "Mill Burner");
 let bendover = new Queen("Ben Dover", 2, 8, 2, 2, 8, 3, 6, "Ben Dover");
@@ -2463,7 +2463,7 @@ for (let i = 0; i < customLength; i++) {
 }
 allCustomQueens.splice(0, customLength);
 let allQueens = [
-    lewis,ben,ella,elliot,amy,molly,emily,mabel,harvey,ruben,hamish,bethany,
+    lewis,ben,ella,elliot,amy,molly,emily,alex,harvey,ruben,hamish,bethany,
     millburner,bendover,pennyrolls,pussyclart,ellavatit,cheallywinks,gingersparks,
     monsieurthomas,shrek,trinavega,berniesanders,maccapacca,carolebaskin,trishapaytas,alisonhammond,globglogabgalab,abbyleemiller,cupcakke,isaac,tinkywinky,francisbourgeois,ginalintetti,theresamay,borisjohnson,daddypig,lolaskumpy,
     shrek2,lordfarquaad,fiona,donkey,kingharold,gingerbreadman,queenlillian,dragon,magicmirror,fairygodmother,
