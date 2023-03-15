@@ -2451,6 +2451,22 @@ let theqteez = new Queen("The Q-Teez", 4, 2, 12, 12, 8, 8, 12, "The Q-Teez");
 let misscrawley = new Queen("Miss Crawley", 10, 10, 10, 4, 6, 12, 12, "Miss Crawley");
 let nananoodleman = new Queen("Nana Noodleman", 10, 2, 8, 12, 12, 12, 12, "Nana Noodleman");
 let gameSing = [bigdaddy,bustermoon,meena,gunter,rosita,johnny,ash,mike,theqteez,misscrawley,nananoodleman];
+//HARRY POTTER
+let herminegranger = new Queen("Hermione Granger", 9, 9, 9, 9, 9, 9, 9, "Hermione Granger");
+let harrypotter = new Queen("Harry Potter", 10, 10, 10, 10, 10, 10, 10, "Harry Potter");
+let lordvoldemort = new Queen("Lord Voldemort", 10, 10, 10, 10, 10, 10, 10, "Lord Voldemort");
+let dumbledore = new Queen("Dumbledore", 9, 9, 9, 9, 9, 9, 9, "Dumbledore");
+let lunalovegood = new Queen("Luna Lovegood", 9, 9, 9, 9, 9, 9, 9, "Luna Lovegood");
+let ronweasley = new Queen("Ron Weasley", 9, 9, 9, 9, 9, 9, 9, "Ron Weasley");
+let dracomalfoy = new Queen("Draco Malfoy", 9, 9, 9, 9, 9, 9, 9, "Draco Malfoy");
+let hagrid = new Queen("Hagrid", 9, 9, 9, 9, 9, 9, 9, "Hagrid");
+let doloresumbridge = new Queen("Dolores Umbridge", 9, 9, 9, 9, 9, 9, 9, "Dolores Umbridge");
+let severussnape = new Queen("Severus Snape", 9, 9, 9, 9, 9, 9, 9, "Severus Snape");
+let bellatrixlestrange = new Queen("Bellatrix Lestrange", 9, 9, 9, 9, 9, 9, 9, "Bellatrix Lestrange");
+let dobby = new Queen("Dobby", 9, 9, 9, 9, 9, 9, 9, "Dobby");
+let nevillelongbottom = new Queen("Neville Longbottom", 9, 9, 9, 9, 9, 9, 9, "Neville Longbottom");
+let minervamcgonagall = new Queen("Minerva McGonagall", 9, 9, 9, 9, 9, 9, 9, "Minerva McGonagall");
+let gameHarryPotter = [herminegranger,harrypotter,lordvoldemort,dumbledore,lunalovegood,ronweasley,dracomalfoy,hagrid,doloresumbridge,severussnape,bellatrixlestrange,dobby,nevillelongbottom,minervamcgonagall];
 //PEPPA PIG
 //all possible queens:
 let allCustomQueens = [];
