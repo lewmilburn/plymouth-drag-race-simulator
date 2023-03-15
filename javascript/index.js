@@ -56,7 +56,7 @@ let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
 document.getElementById("softwareinfo").innerHTML =
-    'Version: build-146';
+    'Version: build-147';
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2466,7 +2466,9 @@ let bellatrixlestrange = new Queen("Bellatrix Lestrange", 9, 9, 9, 9, 9, 9, 9, "
 let dobby = new Queen("Dobby", 9, 9, 9, 9, 9, 9, 9, "Dobby");
 let nevillelongbottom = new Queen("Neville Longbottom", 9, 9, 9, 9, 9, 9, 9, "Neville Longbottom");
 let minervamcgonagall = new Queen("Minerva McGonagall", 9, 9, 9, 9, 9, 9, 9, "Minerva McGonagall");
-let gameHarryPotter = [herminegranger,harrypotter,lordvoldemort,dumbledore,lunalovegood,ronweasley,dracomalfoy,hagrid,doloresumbridge,severussnape,bellatrixlestrange,dobby,nevillelongbottom,minervamcgonagall];
+let fredweasley = new Queen("Fred Weasley", 9, 9, 9, 9, 9, 9, 9, "Fred Weasley");
+let georgeweasley = new Queen("George Weasley", 9, 9, 9, 9, 9, 9, 9, "George Weasley");
+let gameHarryPotter = [herminegranger,harrypotter,lordvoldemort,dumbledore,lunalovegood,ronweasley,dracomalfoy,hagrid,doloresumbridge,severussnape,bellatrixlestrange,dobby,nevillelongbottom,minervamcgonagall,fredweasley,georgeweasley];
 //PEPPA PIG
 //all possible queens:
 let allCustomQueens = [];
