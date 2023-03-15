@@ -2395,6 +2395,7 @@ let alex = new Queen("Alex", 12, 8, 10, 6, 4, 5, 8, "Alex");
 let harvey = new Queen("Harvey", 2, 8, 4, 3, 9, 5, 4, "Harvey");
 let ruben = new Queen("Ruben", 8, 10, 2, 2, 6, 3, 6, "Ruben");
 let gameB13normal = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,alex,harvey,ruben];
+let gameTrematon = [lewis,ben,elliot,amy,ella,emily];
 //B13DRAG:
 let millburner = new Queen("Mill Burner", 5, 8, 3, 12, 5, 5, 10, "Mill Burner");
 let bendover = new Queen("Ben Dover", 2, 8, 2, 2, 8, 3, 6, "Ben Dover");
