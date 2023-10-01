@@ -56,7 +56,7 @@ let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
 document.getElementById("softwareinfo").innerHTML =
-    'Version: build-149';
+    'Version: build-150';
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2053,7 +2053,7 @@ function lipSync() {
         let disqualifiedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let clartedQueen = currentCast[randomNumber(0, currentCast.length - 1)];
         let reason = 'ERROR: REASON NOT DEFINED';
-        let disqualificationReason = randomNumber(0, 12);
+        let disqualificationReason = randomNumber(0, 15);
         if (disqualificationReason === 0) {
             if (disqualifiedQueen['_name'] === clartedQueen['_name']) {
                 reason = 'clarted RuPaul.';
@@ -2098,6 +2098,10 @@ function lipSync() {
             } else {
                 reason = 'called '+clartedQueen['_name']+' a great supine protoplasmic invertebrate jelly!';
             }
+        } else if (disqualificationReason === 14) {
+            reason = 'queefed all throughout the building!';
+        } else if (disqualificationReason === 15) {
+            reason = 'tried to teach Lewis how to cook an egg, which then caused the studio roof to cave in.';
         }
         screen.createBold(disqualifiedQueen.getName() + ", it has come to my attention that you have broken the rules of this competition. The evidence says that you "+reason+" I must ask you to sashay away.");
         bottomQueens[0].addToTrackRecord("BTM2");
