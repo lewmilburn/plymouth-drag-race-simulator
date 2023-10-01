@@ -56,7 +56,7 @@ let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
 document.getElementById("softwareinfo").innerHTML =
-    'Version: build-147';
+    'Version: build-148';
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
@@ -2394,7 +2394,9 @@ let bethany = new Queen("Bethany", 10, 2, 12, 12, 3, 4, 6, "Bethany");
 let alex = new Queen("Alex", 12, 8, 10, 6, 4, 5, 8, "Alex");
 let harvey = new Queen("Harvey", 2, 8, 4, 3, 9, 5, 4, "Harvey");
 let ruben = new Queen("Ruben", 8, 10, 2, 2, 6, 3, 6, "Ruben");
+let stuart = new Queen("Stuart", 2, 2, 2, 2, 2, 2, 2, "Stuart");
 let gameB13normal = [lewis,ben,elliot,amy,ella,emily,molly,hamish,bethany,alex,harvey,ruben];
+let game14 = [lewis,elliot,amy,ella,alex,ruben,stuart];
 let gameTrematon = [lewis,ben,elliot,amy,ella,emily];
 //B13DRAG:
 let millburner = new Queen("Mill Burner", 5, 8, 3, 12, 5, 5, 10, "Mill Burner");
@@ -2470,6 +2472,7 @@ let fredweasley = new Queen("Fred Weasley", 9, 9, 9, 9, 9, 9, 9, "Fred Weasley")
 let georgeweasley = new Queen("George Weasley", 9, 9, 9, 9, 9, 9, 9, "George Weasley");
 let gameHarryPotter = [herminegranger,harrypotter,lordvoldemort,dumbledore,lunalovegood,ronweasley,dracomalfoy,hagrid,doloresumbridge,severussnape,bellatrixlestrange,dobby,nevillelongbottom,minervamcgonagall,fredweasley,georgeweasley];
 //PEPPA PIG
+
 //all possible queens:
 let allCustomQueens = [];
 if (localStorage.getItem("customQueens") != null)
