@@ -56,7 +56,7 @@ let lastChallenge = '';
 let audio = new Audio('audio/song/4.mp3');
 //audio.play();
 document.getElementById("softwareinfo").innerHTML =
-    'Version: build-148';
+    'Version: build-149';
 function miniChallenge() {
     let miniChallengeScreen = new Scene();
     miniChallengeScreen.clean();
